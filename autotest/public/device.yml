@@ -1,0 +1,22 @@
+---
+Android:
+  platformName: Android
+  platformVersion: 5.0
+  deviceName: Nexus 5X
+  appPackage: com.ef.core.engage.smartenglish
+  appActivity: com.ef.core.engage.ui.screens.activity.SmartEnglishSplashActivity
+  resetKeyboard: True
+  noSign: True
+  noReset: True
+  deviceReadyTimeout: 5
+#iPhone 7
+IOS:
+  platformName: IOS
+  deviceName: iPhone 6s
+  platformVersion: 10.3
+  app: /Users/anderson/builds/EngageEnglishtownQAdebug.app
+  automationName: XCUITest
+  allowTouchIdEnroll: True
+  noSign: True
+  noReset: True
+  deviceReadyTimeout: 5

@@ -1,0 +1,24 @@
+IOS:
+  LoginPage:
+    username: xpath_//XCUIElementTypeTextField[@value='Username']
+    password: xpath_//XCUIElementTypeSecureTextField
+    loginbtn: id: LOGIN
+
+  CourseOverViewPage:
+    settings: xpath: //XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]
+    logoutbtn: id: Logout
+    Language: id: Language
+    backbtn: id: back button black
+    Selectlevel: id: Select level
+    lessonone: id: pnlLesson_1_1
+
+  ModuleOverViewPage:
+    moduleall: //XCUIElementTypeOther[@name="lesson_page"]/XCUIElementTypeOther[2]/XCUIElementTypeOther
+    moduleach: /XCUIElementTypeOther[@name="lesson_page"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther['%d']
+    moduleone: //XCUIElementTypeOther[@name="pnlModule_Vocabulary"]/XCUIElementTypeOther/XCUIElementTypeButton
+    download: btn_moduleintro_download
+    passmodule: id: PASS MODULE
+    startbtn: id: btn_moduleintro_start
+    passbtn: id: btnQApass
+    countiune: id: btnContinue
+    arrow: id: arrow

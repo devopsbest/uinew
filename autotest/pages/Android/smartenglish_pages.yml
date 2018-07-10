@@ -1,0 +1,47 @@
+---
+Android:
+  LoginPage:
+    Activity: "com.ef.core.engage.ui.screens.activity.SmartEnglishLoginActivity"
+    username: id;txtName
+    password: id;txtPwd
+    loginbtn: id;btnLogin
+
+  CourseOverViewPage:
+    Activity: "com.ef.core.engage.ui.screens.activity.EnglishTownCourseOverviewActivity"
+    settings: xpath;//*[@resource-id="com.ef.core.engage.smartenglish:id/toolbar"]/android.widget.ImageButton[1]
+    course: xpath;//*[@resource-id="com.ef.core.engage.smartenglish:id/tabs_strip_view_stub"]/android.widget.LinearLayout[1]/android.support.v7.app.ActionBar$Tab[2]
+    Download: id;download_progress_bar
+    Level_move_on: id;btn_move_on
+    Change_level_button: id;imageViewDropDown
+    unittitle: id; textViewTitle
+    logout: id;textview_logout
+    finished_status: xpath;//android.widget.FrameLayout['%d']/*[@resource-id="com.ef.core.engage.englishtown:id/tatusLayout"]
+
+  LessonOverViewPage:
+    Activity: "com.ef.core.engage.ui.screens.activity.EnglishTownLessonActivity"
+    Lesson_collapse: id;image_collapse
+    back_button: id;Navigate up
+
+  ModuleOverViewPage:
+    Activity: "com.ef.core.engage.ui.screens.activity.EnglishTownModuleActivity"
+    modules: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/template_menu"]/android.widget.RelativeLayout
+    module_download: id;download_button
+    module_start: id;start_activity
+    activity_skip_button: id;activity_skip_button
+    countinue_button: id;text_continue
+
+  SettingPage:
+    language: id;textview_set_language
+    languageset: xpath;//*[contains(@resource-id,'levelName') and @text='%s']
+    language_back: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/action_bar"]/android.widget.ImageButton
+    sync: id;textview_sync
+    logout: id;textview_logout
+
+  ManageCoursePage:
+    Back_button: id;Navigate up
+    GE_course: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/tabs_change_course"]/android.widget.TextView[1]
+    BE_course: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/tabs_change_course"]/android.widget.TextView[2]
+    # lesson from 0 to 15
+    Lessons: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/course_structure_level_card_view"][%d]
+    Lessonsall: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/course_structure_level_card_view"]/[@text='%d')]
+    Lessonchild: xpath;//*[@resource-id="com.ef.core.engage.englishtown:id/course_structure_level_card_view"]/android.widget.RelativeLayout/*[@resource-id="com.ef.core.engage.englishtown:id/course_structure_level_number"]

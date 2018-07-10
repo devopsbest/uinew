@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<testsuite errors="0" failures="0" name="DefaultSuite" skips="0" tests="1" time="73.656" timestamp="2018-07-06 17:47:27.483245">
+		<testcase classname="autotest.cases.Android.test_login.LoginTest" name="check_logout_success" time="73.653"/>
+	</testsuite>
